@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-shop mobiteli</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/stil.css">
+    <script>
+        function ispisTelefona(){
+            let tel = document.getElementById("telefon").innerHTML;
+            document.getElementById("ispisTelefona").innerHTML = tel;
+        }
+        function posalji(){
+            let email = document.getElementById("email").value;
+            let poruka = document.getElementById("poruka").value;
+            document.getElementById("ispis").innerHTML="Korisnik '"+email+"' šalje poruku '"+poruka+"'.";
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="w3-bar w3-green">
+        <a href="index.html" class="w3-bar-item w3-button">Početna stranica</a>
+        <a href="svePonude.html" class="w3-bar-item w3-button">Ponuda</a>
+        <a href="" class="w3-bar-item w3-button">Kontakt</a>
+        <a href="registracija.html" class="w3-bar-item w3-button">Registracija</a>
+    </div>
+
+    <div class="w3-center w3-animate-bottom"><h1 class="w3-sans-serif">Web shop - mobiteli</h1></div>
+      
+    <div class="w3-center w3-animate-bottom"><h2 class="w3-sans-serif">Kontakt</h2></div>
+    
+
+    <div class="w3-center" id="telefon">Broj telefona: 111 222</div>
+
+    <div class="w3-center">Adresa: Vukovarska 58, Rijeka 51000</div>
+
+    <div class="w3-center">Ako želite postaviti upit ili ostaviti poruku, kontaktirat ćemo Vas na unesenu e-mail adresu.</div>
+
+    <div class="w3-center">
+        <label for="">Unesite Vašu e-mail adresu:</label>
+        <br>
+        <div class="w3-row-padding">
+            <input type="email" name="" id="email" placeholder="E-mail">
+        </div>
+    </div>
+
+    <div class="w3-center">
+        <label for="">Unesite poruku</label>
+        <br>
+        <textarea name="" id="poruka" cols="30" rows="5"></textarea>
+    </div>
+
+    <div class="w3-center">
+        <button class="w3-btn w3-round-xxlarge" onclick="posalji()">Pošalji</button>
+    </div>
+
+    <div id="ispisTelefona" class="w3-center"></div>
+    <div id="ispis" class="w3-center"></div>
+
+    <script>
+        document.write("<div class = 'w3-center'>");
+        document.write("Web sjedište <i>Web-shop mobiteli</i>, izrađeno je u sklopu kolegija Programiranje za internet");
+        document.write("</div>");
+        ispisTelefona();
+    </script>
+
+</body>
+</html>

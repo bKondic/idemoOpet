@@ -1,0 +1,12 @@
+body{
+    background-color: #dedbd2;
+}
+.tablica{
+    background-color: #f7e1d7;
+}
+
+.okvir{
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+}
